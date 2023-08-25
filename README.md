@@ -1,5 +1,7 @@
 # Totality Store is the ecommerce website front-end, which supports Add To Cart fuctionality, View Cart, Product filtering on the basis of Price Range, Rating Range and Category Selected it also supports the      Searching of product by name, On the cart page it allows to increase and decrease product quantity, It automatically calculates the total cost of all products, discount etc on checkout pages, It also allows users to enter the Contact Detail, Shipping details and Payment details, On user login It shows the User Name along with its Avatar in 'Navbar', On home page It shows Products Image, Product Name, Product Description, Product Price and Product Ratings of Each Product, allows multiple ways to user to navigate to cart and home page.
 
+# Live at https://prakhar-totality-store.netlify.app/
+
 # It prevents users from checkout without logging in 
 
 # Built it using React js, Chakra UI and Font Awesome.

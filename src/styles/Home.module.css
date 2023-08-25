@@ -1,0 +1,52 @@
+.prod_con{
+    display: flex;
+    flex-wrap: wrap ;  
+}
+.prod_card{
+    margin:20px;
+    width:400px ;
+    /* min-width: 1000px; */
+    flex-grow: 1;
+    border: 1px solid grey !important;
+    
+}
+.card_img{
+    width:100% ;
+    /* min-height:50% ; */
+     /* height: 100%; */
+    
+    height :calc(100% - 170px)!important; 
+    flex-grow: 1;
+    box-sizing: border-box;
+    /* width:500px ; */
+}
+.menu_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.input_search{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.search_category_wrapper{
+    display: flex;
+    align-items: center;
+    max-width:100vw ;
+}
+.sliders_wrapper{
+    display: flex;
+    flex-direction: row;
+    width:60vw ;
+    margin-top: 10px;
+    height:100px ;
+    flex-grow: 1;
+}
+.slider{
+    height: 100px!important;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width:60vw
+}

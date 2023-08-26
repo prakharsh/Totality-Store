@@ -22,10 +22,10 @@ function Navbar() {
         <div style={{display:'flex'}}>
           <img src={user.picture} className={styles.user_icon} alt=''/>
           <div className={styles.user_name}>{user.nickname}</div>
-        <div style={{marginLeft:'10px', fontWeight:'bold', fontSize:'17px',cursor:'pointer'}} onClick={ () => logout({ logoutParams: { returnTo: window.location.origin } })}>Log Out</div>
+        <div style={{fontWeight:'bold', fontSize:'18px',cursor:'pointer',minWidth:'70px', paddingLeft:'10px'}} onClick={ () => logout({ logoutParams: { returnTo: window.location.origin } })}>Log Out</div>
         </div>
         :
-        <div style={{fontWeight:'bold', fontSize:'17px', cursor:'pointer'}}onClick={() => loginWithRedirect()}>Log In</div>
+        <div style={{fontWeight:'bold', fontSize:'18px', cursor:'pointer',minWidth:'70px', paddingLeft:'10px'}}onClick={() => loginWithRedirect()}>Log In</div>
       }
     </div>
     <Link to='/cart'>

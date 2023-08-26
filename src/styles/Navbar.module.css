@@ -44,19 +44,19 @@
   align-items: center;
   justify-content: center;
   height: 20px;
-  width: 20px;
+  width: 20px; 
   border-radius: 50%;
   background: aqua;
   font-size: 14px;
   font-weight: 700;
   color: black;
-  margin:0px 50px 2px 0px ;
+  /* margin:0px 50px 2px 0px ; */
 }
 .cart_wrapper{
     display: flex;
     position: absolute;
     top:20px ;
-    right:10vw ;
+    right:25vw ;
 }
 .user_icon{
     width:20px;

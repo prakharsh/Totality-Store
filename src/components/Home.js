@@ -100,7 +100,7 @@ function Home() {
             color='white'
             mt='-8'
             ml='1'
-            w='9'
+            w='10'
             borderRadius='20px'
         >
          {pricesliderValue[0]*20}
@@ -111,7 +111,7 @@ function Home() {
             color='white'
             mt='-8'
             ml='-8'
-            w='9'
+            w='10'
             borderRadius='20px'
         >
          {pricesliderValue[1]*20}

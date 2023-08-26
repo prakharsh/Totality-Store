@@ -81,10 +81,10 @@ import {
                             </Tbody>
                         ))
                     } 
-                        <Tr>
-                            <Text as='b' fontSize='2xl'> Subtotal-  Rs {totalCost}</Text>
-                            <Text >Taxes and Shipping Calculated at Checkout</Text>
-                            <Button colorScheme='blue' style={{margin:'10px 0px 10px'}} 
+                        <Tr >
+                            <Text as='b' fontSize='2xl' style={{marginLeft:'10px'}}> Subtotal-  Rs {totalCost}</Text>
+                            <Text style={{marginLeft:'10px'}} >Taxes and Shipping Calculated at Checkout</Text>
+                            <Button colorScheme='blue' style={{margin:'10px 0px 10px 10px'}} 
                                         onClick={()=>{
                                             if(isAuthenticated) navigate('/checkout') ;
                                             else{
@@ -97,7 +97,7 @@ import {
                                                 })
                                             }
                                     }}>Checkout</Button>
-                            <Link to='/'><Text fontSize='xl' ><i className="fa-solid fa-arrow-left-long"></i> Continue shopping</Text></Link>
+                            <Link to='/'><Text fontSize='xl' style={{marginLeft:'10px'}} ><i className="fa-solid fa-arrow-left-long"></i> Continue shopping</Text></Link>
                         </Tr>
                     </Table>
                 </TableContainer>

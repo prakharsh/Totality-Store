@@ -43,44 +43,44 @@ import {
         return (
             <div>
                 <TableContainer>
-                            <Table variant='simple'  style={{width:'60vw',margin:'auto' }}>
-                                <Thead>
-                                    <Tr>
-                                        <Th>Product</Th>
-                                        <Th>Price</Th>
-                                        <Th>Quantity</Th>
-                                        <Th>Total</Th>
-                                    </Tr>
-                                </Thead>   
-                    {
-                        cartProds.map((obj,idx)=>(
-                            <Tbody key={idx}>  
-                                { obj!==undefined &&
-                                        <Tr>
-                                            <Td>
-                                                <div style={{display:'flex', alignItems:'center'}}>
-                                                <img src={obj.images[0]} alt='' style={{width:'100px'}}></img> 
-                                                <div style={{marginLeft:'20px'}}>{obj.title}</div>
-                                                </div>
-                                            </Td>
-                                            <Td>Rs {obj.price}</Td>
-                                            <Td >
-                                                <NumberInput size='sm' defaultValue={obj.quantity} >
-                                                    {obj.quantity}
-                                                    <NumberInputStepper>
-                                                    <NumberIncrementStepper onClick={()=>{incQuan(obj)}} />
-                                                    <NumberDecrementStepper onClick={()=>{decQuan(obj)}}/>
-                                                    </NumberInputStepper>
-                                                </NumberInput>
-                                            </Td>
+                    <Table variant='simple'  style={{width:'60vw',margin:'auto' }}>
+                        <Thead>
+                            <Tr>
+                                <Th>Product</Th>
+                                <Th>Price</Th>
+                                <Th>Quantity</Th>
+                                <Th>Total</Th>
+                            </Tr>
+                        </Thead>   
+                        {
+                            cartProds.map((obj,idx)=>(
+                                <Tbody key={idx}>  
+                                    { obj!==undefined &&
+                                            <Tr>
+                                                <Td>
+                                                    <div style={{display:'flex', alignItems:'center'}}>
+                                                    <img src={obj.images[0]} alt='' style={{width:'100px'}}></img> 
+                                                    <div style={{marginLeft:'20px'}}>{obj.title}</div>
+                                                    </div>
+                                                </Td>
+                                                <Td>Rs {obj.price}</Td>
+                                                <Td >
+                                                    <NumberInput size='sm' defaultValue={obj.quantity} >
+                                                        {obj.quantity}
+                                                        <NumberInputStepper>
+                                                        <NumberIncrementStepper onClick={()=>{incQuan(obj)}} />
+                                                        <NumberDecrementStepper onClick={()=>{decQuan(obj)}}/>
+                                                        </NumberInputStepper>
+                                                    </NumberInput>
+                                                </Td>
 
-                                            <Td >Rs {obj.quantity * obj.price}</Td>
-                                        </Tr>
-                                }
+                                                <Td >Rs {obj.quantity * obj.price}</Td>
+                                            </Tr>
+                                    }
 
-                            </Tbody>
-                        ))
-                    } 
+                                </Tbody>
+                            ))
+                        } 
                         <Tr >
                             <Text as='b' fontSize='2xl' style={{marginLeft:'10px'}}> Subtotal-  Rs {totalCost}</Text>
                             <Text style={{marginLeft:'10px'}} >Taxes and Shipping Calculated at Checkout</Text>
@@ -96,7 +96,8 @@ import {
                                                     isClosable: true,
                                                 })
                                             }
-                                    }}>Checkout</Button>
+                                    }}>Checkout
+                            </Button>
                             <Link to='/'><Text fontSize='xl' style={{marginLeft:'10px'}} ><i className="fa-solid fa-arrow-left-long"></i> Continue shopping</Text></Link>
                         </Tr>
                     </Table>

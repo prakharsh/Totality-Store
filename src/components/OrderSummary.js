@@ -16,36 +16,35 @@ function OrderSummary() {
     
   return (
     
-    <Card style={{ margin:'auto',marginTop:'20px'}} maxWidth={800} shadow="1px 1px 3px rgba(0,0,0,0.3)"
-    >
-    <CardBody style={{textAlign:'center'}}>
-    <Heading w="100%" textAlign={'center'} fontWeight="normal" mb="2%">
-        Order Summary
-      </Heading>
-      <TableContainer>
-        <Table variant='simple'>
-        <Tbody style={{fontWeight:'500'}}>
-      <Tr>
-        <Td>SubTotal-</Td>
-        <Td>Rs {totalCost}</Td>
-      </Tr>
-      <Tr>
-        <Td>Taxes and Shipping Fee-</Td>
-        <Td>Rs 100</Td>
-      </Tr>
-      <Tr>
-        <Td>Discount(5%)-</Td>
-        <Td>Rs {totalCost/20}</Td>
-      </Tr>
-      <Tr>
-        <Td>Amount to Pay- </Td>
-        <Td>Rs {totalCost- totalCost/20 + 100}</Td>
-      </Tr>
-    </Tbody>
-        </Table>
-       </TableContainer>
-    </CardBody>
-  </Card>
+    <Card style={{ margin:'auto',marginTop:'20px'}} maxWidth={800} shadow="1px 1px 3px rgba(0,0,0,0.3)">
+      <CardBody style={{textAlign:'center'}}>
+        <Heading w="100%" textAlign={'center'} fontWeight="normal" mb="2%">
+          Order Summary
+        </Heading>
+        <TableContainer>
+          <Table variant='simple'>
+            <Tbody style={{fontWeight:'500'}}>
+              <Tr>
+                <Td>SubTotal-</Td>
+                <Td>Rs {totalCost}</Td>
+              </Tr>
+              <Tr>
+                <Td>Taxes and Shipping Fee-</Td>
+                <Td>Rs 100</Td>
+              </Tr>
+              <Tr>
+                <Td>Discount(5%)-</Td>
+                <Td>Rs {totalCost/20}</Td>
+              </Tr>
+              <Tr>
+                <Td>Amount to Pay- </Td>
+                <Td>Rs {totalCost- totalCost/20 + 100}</Td>
+              </Tr>
+            </Tbody>
+          </Table>
+        </TableContainer>
+      </CardBody>
+    </Card>
   )
 }
 

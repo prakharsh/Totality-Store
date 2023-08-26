@@ -1,3 +1,29 @@
+# Totality Store is the ecommerce website front-end, which supports Add To Cart fuctionality, View Cart, Product filtering on the basis of Price Range, Rating Range and Category Selected it also supports the      Searching of product by name, On the cart page it allows to increase and decrease product quantity, It automatically calculates the total cost of all products, discount etc on checkout pages, It also allows users to enter the Contact Detail, Shipping details and Payment details, On user login It shows the User Name along with its Avatar in 'Navbar', On home page It shows Products Image, Product Name, Product Description, Product Price and Product Ratings of Each Product, allows multiple ways to user to navigate to cart and home page.
+
+# Live at https://prakhar-totality-store.netlify.app/
+
+# It prevents users from checkout without logging in 
+
+# Built it using React js, Chakra UI and Font Awesome.
+
+# Used the Redux to manage the global state of items in cart such that each component can access it without prop drilling.
+
+# Made 2 Redux State one for keeping all products and one for keeping overall count of all products.
+
+# Used the latest Redux Toolkit to implement redux.
+
+# Redux State destroys on page reload (which is its normal behaviour), To prevent this I have stored the Redux state in local storage.
+
+# Used the Auth0 for authentication.
+
+# Used the React Browser router to facilitate routing on all pages.
+
+# Dummy data in application is coming from "https://dummyjson.com" api.
+
+# Used the Flexbox and media queries to make it fully responsive for all devices.
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
